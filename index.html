@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f7f3">
+    <meta name="description" content="A more connected marketplace. Discover independent brands, shop with intention, and grow your creative community.">
+    <title>Commonplace — Good things grow together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Commonplace home">
+        <span class="brand-mark" aria-hidden="true">c</span>
+        commonplace<span class="brand-period">.</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#discover">Discover</a>
+        <a href="#how-it-works">Our thing</a>
+        <a href="#creators">Creators</a>
+      </nav>
+      <a class="button button-small button-dark header-cta" href="#join">Join the community <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A marketplace with more meaning</p>
+          <h1 id="hero-title">Good things<br>grow <span>together.</span></h1>
+          <p class="hero-description">A little place for independent brands, curious shoppers, and the people who bring good ideas to life.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#discover">Find your new favorite <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="community-note">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80" alt="">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&h=80&q=80" alt="">
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=80&h=80&q=80" alt="">
+            </div>
+            <p><strong>Made for people,</strong><br>by people with good ideas.</p>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image-wrap">
+            <img class="hero-image" src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1100&q=85" alt="Sunlit, thoughtfully arranged homewares and flowers">
+          </div>
+          <div class="floating-note note-top"><span class="note-sparkle">✳</span><span>Small finds.<br>Big good energy.</span></div>
+          <div class="floating-note note-bottom"><span class="note-check">✓</span><span>Thoughtfully<br>made, always.</span></div>
+          <span class="hero-sticker" aria-hidden="true">buy small<br>feel good <span>↗</span></span>
+        </div>
+        <span class="hero-orbit orbit-one" aria-hidden="true"></span>
+        <span class="hero-orbit orbit-two" aria-hidden="true"></span>
+      </section>
+
+      <section class="ticker" aria-label="Our community">
+        <div class="ticker-inner">
+          <span>Independent by nature</span><i>✳</i><span>Better together</span><i>✳</i><span>Good things, shared</span><i>✳</i><span>Independent by nature</span><i>✳</i><span>Better together</span><i>✳</i>
+        </div>
+      </section>
+
+      <section class="discover section-pad" id="discover" aria-labelledby="discover-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The good stuff starts here</p>
+            <h2 id="discover-title">A little bit of <span>lovely.</span></h2>
+          </div>
+          <a class="text-link desktop-link" href="#join">Explore the marketplace <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="discovery-toolbar">
+          <div class="filter-list" role="group" aria-label="Filter products by category">
+            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">Everything</button>
+            <button class="filter-chip" type="button" data-filter="home" aria-pressed="false">For your space</button>
+            <button class="filter-chip" type="button" data-filter="wear" aria-pressed="false">For your wardrobe</button>
+            <button class="filter-chip" type="button" data-filter="care" aria-pressed="false">For your ritual</button>
+          </div>
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="visually-hidden">Search products and makers</span>
+            <input id="product-search" type="search" placeholder="Search the good stuff" autocomplete="off">
+          </label>
+        </div>
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" data-category="home" data-search="ceramic vase home pottery goodform studio">
+            <a class="product-image product-terracotta" href="#join" aria-label="Discover the Sunday ceramic vase">
+              <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=700&h=850&q=80" alt="Handmade sculptural ceramic vase">
+              <span class="product-badge">Made by hand</span>
+            </a>
+            <button class="save-button" type="button" aria-label="Save Sunday ceramic vase" aria-pressed="false">♡</button>
+            <div class="product-info"><div><p class="product-maker">Goodform Studio</p><h3>Sunday ceramic vase</h3></div><span class="product-price">$48</span></div>
+          </article>
+          <article class="product-card" data-category="wear" data-search="linen shirt clothing kindred goods fashion">
+            <a class="product-image product-linen" href="#join" aria-label="Discover the everyday linen shirt">
+              <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=700&h=850&q=80" alt="Natural linen clothing in a warm neutral tone">
+              <span class="product-badge">Small-batch</span>
+            </a>
+            <button class="save-button" type="button" aria-label="Save everyday linen shirt" aria-pressed="false">♡</button>
+            <div class="product-info"><div><p class="product-maker">Kindred Goods</p><h3>The everyday linen</h3></div><span class="product-price">$86</span></div>
+          </article>
+          <article class="product-card" data-category="care" data-search="soap skincare body wash still sunday">
+            <a class="product-image product-blue" href="#join" aria-label="Discover the slow morning body wash">
+              <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&h=850&q=80" alt="Thoughtfully made skincare and body care">
+              <span class="product-badge">Kind to skin</span>
+            </a>
+            <button class="save-button" type="button" aria-label="Save slow morning body wash" aria-pressed="false">♡</button>
+            <div class="product-info"><div><p class="product-maker">Still Sunday</p><h3>Slow morning body wash</h3></div><span class="product-price">$32</span></div>
+          </article>
+          <article class="product-card" data-category="home" data-search="candle home fragrance candlefolk amber glow">
+            <a class="product-image product-yellow" href="#join" aria-label="Discover the golden hour candle">
+              <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=700&h=850&q=80" alt="A softly glowing hand-poured candle">
+              <span class="product-badge">A little ritual</span>
+            </a>
+            <button class="save-button" type="button" aria-label="Save golden hour candle" aria-pressed="false">♡</button>
+            <div class="product-info"><div><p class="product-maker">Candlefolk</p><h3>Golden hour candle</h3></div><span class="product-price">$38</span></div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No little lovelies found. Try a different search.</p>
+        <div class="mobile-explore"><a class="button button-outline" href="#join">Explore the marketplace <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="mission section-pad" id="how-it-works" aria-labelledby="mission-title">
+        <div class="mission-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> More than a marketplace</p>
+          <h2 id="mission-title">A better way to<br><span>find your people.</span></h2>
+          <p>When makers, tastemakers, and thoughtful shoppers meet in one place, everyone gets to do their best work. That’s the whole idea.</p>
+          <a class="button button-light" href="#join">Come on in <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="mission-visual">
+          <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=85" alt="Independent makers sharing ideas at a creative market">
+          <div class="mission-caption"><span>Good ideas travel further</span><span aria-hidden="true">✳</span></div>
+          <div class="mission-stamp" aria-hidden="true">GOOD<br>GROWS<br>HERE</div>
+        </div>
+      </section>
+
+      <section class="community section-pad" id="join" aria-labelledby="join-title">
+        <div class="section-heading community-heading">
+          <div><p class="eyebrow">There’s room for you</p><h2 id="join-title">Come as you <span>are.</span></h2></div>
+          <p class="community-intro">However you show up, there’s a place for you here.</p>
+        </div>
+        <div class="community-grid">
+          <article class="community-card consumer-card">
+            <div class="community-card-icon" aria-hidden="true">♡</div>
+            <p class="card-kicker">For the good finders</p>
+            <h3>Shop with<br>your heart in it.</h3>
+            <p>Find thoughtful pieces from independent brands you’ll feel good about finding.</p>
+            <a class="text-link" href="#discover">Find your thing <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="community-card vendor-card">
+            <div class="community-card-icon" aria-hidden="true">✳</div>
+            <p class="card-kicker">For the makers & doers</p>
+            <h3>Your small thing<br>could be a big thing.</h3>
+            <p>Build a home for your brand and meet the people who are looking for exactly what you make.</p>
+            <a class="text-link" href="#newsletter-email">Get maker updates <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="community-card creator-card" id="creators">
+            <div class="community-card-icon" aria-hidden="true">↗</div>
+            <p class="card-kicker">For the storytellers</p>
+            <h3>Good taste is<br>better shared.</h3>
+            <p>Share what you love, meet your people, and make a little something from the good stuff you find.</p>
+            <a class="text-link" href="#newsletter-email">Get creator updates <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter section-pad" aria-labelledby="newsletter-title">
+        <div><p class="eyebrow">The occasional good thing</p><h2 id="newsletter-title">A little lovely in your inbox.</h2><p>New finds, lovely people, and the occasional reason to smile. No noise, promise.</p></div>
+        <form class="newsletter-form" id="newsletter-form" data-endpoint="https://formspree.io/f/mwlvajde">
+          <label class="visually-hidden" for="newsletter-email">Your email address</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+          <input class="visually-hidden" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="button button-dark" type="submit">Count me in <span aria-hidden="true">↗</span></button>
+          <p class="form-message" id="form-message" aria-live="polite"></p>
+        </form>
+        <p class="newsletter-consent">By signing up, you agree to receive occasional email updates. Unsubscribe anytime.</p>
+        <span class="newsletter-flower" aria-hidden="true">✳</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#" aria-label="Commonplace home"><span class="brand-mark" aria-hidden="true">c</span> commonplace<span class="brand-period">.</span></a>
+      <p>Good things grow together. © <span id="year"></span> Commonplace.</p>
+      <div class="footer-links"><a href="#how-it-works">Our thing</a><a href="#join">Get in touch</a><a href="#discover">Instagram ↗</a></div>
+    </footer>
+  </body>
+</html>
