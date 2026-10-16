@@ -18,8 +18,20 @@ if (product) {
   image.alt = product.imageAlt;
 
   const vendorLink = document.querySelector("#vendor-link");
-  vendorLink.href = product.url;
-  vendorLink.setAttribute("aria-label", `Visit ${product.vendor}'s official shop to view ${product.name}`);
+  vendorLink.href = product.affiliateUrl || product.url;
+  vendorLink.textContent = product.affiliateUrl ? "Shop the official listing" : "Visit the official shop";
+  const linkArrow = document.createElement("span");
+  linkArrow.setAttribute("aria-hidden", "true");
+  linkArrow.textContent = " ↗";
+  vendorLink.append(linkArrow);
+  vendorLink.setAttribute("aria-label", product.affiliateUrl
+    ? `Affiliate link: visit ${product.vendor}'s shop to view ${product.name}`
+    : `Visit ${product.vendor}'s official shop to view ${product.name}`);
+
+  const detailDisclosure = document.querySelector("#detail-disclosure");
+  detailDisclosure.textContent = product.affiliateUrl
+    ? "This is an affiliate link. Commonplace may earn a commission if you buy through it, at no extra cost to you. The vendor handles the sale, returns, and shipping."
+    : "Commonplace currently earns no commission from this link. Purchases, returns, product details, and shipping are handled by the vendor. Availability varies by country.";
 
   const related = products.filter((item) => item.category === product.category && item.id !== product.id).slice(0, 4);
   if (related.length > 0) {

@@ -112,8 +112,11 @@ h1, h2, h3, p { margin-top: 0; }
 .product-info h3 { margin: 0; font-size: 11px; font-weight: 600; line-height: 1.5; }
 .product-price { padding-top: 14px; font-size: 11px; font-weight: 600; }
 .product-details-link { flex: 0 0 auto; font-size: 10px; }
+.card-shop-link { display: inline-flex; width: fit-content; margin-top: 9px; color: #526347; font-size: 10px; font-weight: 700; }
+.card-shop-link:hover { color: #a35f42; }
 .empty-state { padding: 38px 0; color: var(--muted); font-size: 13px; text-align: center; }
 .marketplace-disclosure { max-width: 670px; margin: 25px auto 0; color: #777b70; font-size: 10px; line-height: 1.7; text-align: center; }
+.affiliate-disclosure { margin: 23px 0 -10px; padding: 12px 14px; border-left: 2px solid #80926e; background: #eeeee7; color: #5d6656; font-size: 10px; line-height: 1.65; }
 
 .product-detail-main { max-width: 1180px; margin: 0 auto; padding: 34px 7% 86px; }
 .breadcrumbs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; color: #777b70; font-size: 10px; }

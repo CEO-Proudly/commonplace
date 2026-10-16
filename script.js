@@ -3,8 +3,21 @@ const filterButtons = document.querySelectorAll(".filter-chip");
 const productGrid = document.querySelector("#product-grid");
 const searchInput = document.querySelector("#product-search");
 const emptyState = document.querySelector("#empty-state");
+const affiliateDisclosure = document.querySelector("#affiliate-disclosure");
 const savedProducts = new Set();
 let activeCategory = "all";
+
+function getShopUrl(product) {
+  return product.affiliateUrl || product.url;
+}
+
+function hasAffiliateLinks() {
+  return products.some((product) => Boolean(product.affiliateUrl));
+}
+
+affiliateDisclosure.textContent = hasAffiliateLinks()
+  ? "Some links are affiliate links. Commonplace may earn a commission if you buy through them, at no extra cost to you. Each linked product is marked."
+  : "We currently earn no commission from these product links. If that changes, affiliate links will be clearly disclosed.";
 
 function renderProduct(product) {
   const card = document.createElement("article");
@@ -62,6 +75,17 @@ function renderProduct(product) {
   details.textContent = "Details ↗";
   info.append(copy, details);
   card.append(imageLink, saveButton, info);
+
+  const shopLink = document.createElement("a");
+  shopLink.className = "card-shop-link";
+  shopLink.href = getShopUrl(product);
+  shopLink.target = "_blank";
+  shopLink.rel = "noopener noreferrer";
+  shopLink.textContent = product.affiliateUrl ? "Affiliate link ↗" : "Shop direct ↗";
+  shopLink.setAttribute("aria-label", product.affiliateUrl
+    ? `Affiliate link: shop ${product.name} at ${product.vendor}`
+    : `Shop ${product.name} directly at ${product.vendor}`);
+  card.append(shopLink);
   return card;
 }
 

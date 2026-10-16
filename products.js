@@ -8,7 +8,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A large enamel baking dish listed in East Fork’s official shop. Check the seller’s page for current colors, care details, stock, and pricing.",
     image: "https://cdn.shopify.com/s/files/1/2281/6071/files/26_Q3_FW_Resale_WEB-505195.jpg?v=1786720266",
     imageAlt: "Large neutral enamel baking dish with a splattered finish",
-    url: "https://eastfork.com/products/splattered-enamel-large-baking-dish"
+    url: "https://eastfork.com/products/splattered-enamel-large-baking-dish",
+    affiliateUrl: ""
   },
   {
     id: "east-fork-small-baking-dish",
@@ -19,7 +20,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A small enamel baking dish listed in East Fork’s official shop. Check the seller’s page for current colors, care details, stock, and pricing.",
     image: "https://cdn.shopify.com/s/files/1/2281/6071/files/26_Q3_FW_Resale_WEB-505197.jpg?v=1786720267",
     imageAlt: "Small enamel baking dish with a splattered finish",
-    url: "https://eastfork.com/products/splattered-enamel-small-baking-dish"
+    url: "https://eastfork.com/products/splattered-enamel-small-baking-dish",
+    affiliateUrl: ""
   },
   {
     id: "lucy-yak-wild-expression-dungarees",
@@ -30,7 +32,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "Organic cotton dungarees in the Wild Expression print. Check Lucy & Yak for available sizes, fabric details, and regional shipping.",
     image: "https://cdn.shopify.com/s/files/1/1979/9235/files/ORIGINALDUNGAREE_WILDEXPRESSION1.jpg?v=1781536606",
     imageAlt: "Lucy & Yak dungarees in the Wild Expression print",
-    url: "https://lucyandyak.com/products/original-organic-cotton-dungaree-in-wild-expression-print"
+    url: "https://lucyandyak.com/products/original-organic-cotton-dungaree-in-wild-expression-print",
+    affiliateUrl: ""
   },
   {
     id: "lucy-yak-alisa-playsuit",
@@ -41,7 +44,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A blue gingham seersucker playsuit listed by Lucy & Yak. Check the official shop for current sizes, material details, and price.",
     image: "https://cdn.shopify.com/s/files/1/1979/9235/files/ALISAPLAYSUIT_BLUEGINGHAM2.jpg?v=1778754077",
     imageAlt: "Blue gingham Alisa playsuit",
-    url: "https://lucyandyak.com/products/alisa-organic-cotton-seersucker-playsuit-in-blue-gingham"
+    url: "https://lucyandyak.com/products/alisa-organic-cotton-seersucker-playsuit-in-blue-gingham",
+    affiliateUrl: ""
   },
   {
     id: "ethique-heali-kiwi-shampoo",
@@ -52,7 +56,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A shampoo bar the maker describes as calming care for dry scalps. Review ingredients and usage guidance on Ethique’s official product page.",
     image: "https://cdn.shopify.com/s/files/1/0025/1717/2339/files/HeroShot-Heali-Kiwi.jpg?v=1695618620",
     imageAlt: "Ethique Heali Kiwi shampoo bar",
-    url: "https://ethique.com/products/heali-kiwi-shampoo-for-dandruff-or-scalp-problems"
+    url: "https://ethique.com/products/heali-kiwi-shampoo-for-dandruff-or-scalp-problems",
+    affiliateUrl: ""
   },
   {
     id: "ethique-everyday-shine-stick",
@@ -63,7 +68,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A styling stick from Ethique. Check the official product page for current ingredients, directions, and availability.",
     image: "https://cdn.shopify.com/s/files/1/0025/1717/2339/files/LIMITED_EDITION.png?v=1790252675",
     imageAlt: "Ethique Everyday Shine styling stick",
-    url: "https://ethique.com/products/everyday-shine-styling-sleek-stick"
+    url: "https://ethique.com/products/everyday-shine-styling-sleek-stick",
+    affiliateUrl: ""
   },
   {
     id: "lush-sleepy-body-lotion",
@@ -74,7 +80,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "Lush describes this body lotion as lavender-scented, with comforting tonka notes. Check the product page for ingredients and sizes.",
     image: "https://unicorn.lush.com/media/thumbnails/products/sleepy_body_lotion_2020_thumbnail_256.png",
     imageAlt: "Lush Sleepy body lotion",
-    url: "https://www.lush.com/us/en_us/p/sleepy-body-lotion"
+    url: "https://www.lush.com/us/en_us/p/sleepy-body-lotion",
+    affiliateUrl: ""
   },
   {
     id: "diaspora-pragati-turmeric",
@@ -85,7 +92,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A turmeric spice from Diaspora Co. The maker shares its farm and sourcing story on the product page; check there for current pack sizes and availability.",
     image: "https://cdn.shopify.com/s/files/1/0108/8867/5428/files/PDP_Full_Bleed_Tumeric_chef_tin.png?v=1758531074",
     imageAlt: "Diaspora Co. Pragati turmeric tin",
-    url: "https://www.diasporaco.com/products/pragati-turmeric"
+    url: "https://www.diasporaco.com/products/pragati-turmeric",
+    affiliateUrl: ""
   },
   {
     id: "tonys-small-chocolate-bars",
@@ -96,7 +104,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "Small chocolate bars with flavor options on Tony’s Chocolonely’s official US shop. Check the seller page for ingredients and regional availability.",
     image: "https://cdn.shopify.com/s/files/1/0696/8524/8256/files/1280_90_90_kar_kleine_reepjes_zonder_achtergrond.png?v=1730220070",
     imageAlt: "Tony’s Chocolonely small chocolate bars",
-    url: "https://us.tonyschocolonely.com/products/small-bars-personalized"
+    url: "https://us.tonyschocolonely.com/products/small-bars-personalized",
+    affiliateUrl: ""
   },
   {
     id: "cuyana-deco-bracelet",
@@ -107,7 +116,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A gold-tone bracelet listed by Cuyana. Check the official product page for sizing, materials, and the current price.",
     image: "https://cdn.shopify.com/s/files/1/0712/5054/2907/files/PDP_2000x2500_FA26_DecoBracelet_Gold_6756_7d0b1d74-a35b-47c4-87ca-d59ab6522eb0.jpg?v=1789508854",
     imageAlt: "Cuyana Deco bracelet in gold tone",
-    url: "https://cuyana.com/products/deco-bracelet-7-5-inch"
+    url: "https://cuyana.com/products/deco-bracelet-7-5-inch",
+    affiliateUrl: ""
   },
   {
     id: "cuyana-deco-pearl-earrings",
@@ -118,7 +128,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "Pearl earrings listed by Cuyana. Check the official product page for materials, measurements, and current availability.",
     image: "https://cdn.shopify.com/s/files/1/0712/5054/2907/files/PDP_2000x2500_FA26_DecoPearlEarrings_Gold_6741.jpg?v=1789503342",
     imageAlt: "Cuyana Deco Pearl earrings",
-    url: "https://cuyana.com/products/deco-pearl-earrings"
+    url: "https://cuyana.com/products/deco-pearl-earrings",
+    affiliateUrl: ""
   },
   {
     id: "rifle-paper-roses-wrapping-sheets",
@@ -129,7 +140,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "Floral gift-wrapping sheets from Rifle Paper Co. Check the official shop for current pack details and availability.",
     image: "https://cdn.shopify.com/s/files/1/0630/7148/6146/files/wpm053-01.jpg?v=1762200954",
     imageAlt: "Roses-pattern wrapping sheets from Rifle Paper Co.",
-    url: "https://riflepaperco.com/products/roses-wrapping-sheets"
+    url: "https://riflepaperco.com/products/roses-wrapping-sheets",
+    affiliateUrl: ""
   },
   {
     id: "papier-advent-calendar",
@@ -140,7 +152,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A stationery-themed advent calendar listed by Papier. It is seasonal and stock may be limited; check the seller page for your region.",
     image: "https://d1o785do8fyxgx.cloudfront.net/stock_item/stock_item_images/images/000/002/353/original/24dooradvent-open-products-cream-bg.jpg?1788968878",
     imageAlt: "Papier 24 day advent calendar and stationery gifts",
-    url: "https://www.papier.com/24-day-advent-calendar-544"
+    url: "https://www.papier.com/24-day-advent-calendar-544",
+    affiliateUrl: ""
   },
   {
     id: "dinky-dinkum-olivia-octopus",
@@ -151,7 +164,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A soft toy from the Dinky Dinkums range. Check the maker’s official shop for care information, age guidance, and regional availability.",
     image: "https://cdn.shopify.com/s/files/1/0005/3713/3114/files/OliviaOctopus20.jpg?v=1789453091",
     imageAlt: "Dinky Dinkum Olivia Octopus soft toy",
-    url: "https://uk.dinkumdolls.com/products/dinky-dinkum-olivia-octopus"
+    url: "https://uk.dinkumdolls.com/products/dinky-dinkum-olivia-octopus",
+    affiliateUrl: ""
   },
   {
     id: "dinkum-mermaid-dress-up-set",
@@ -162,7 +176,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A dress-up accessory set listed by Dinkum Dolls. Check the seller page for compatibility, care details, and availability.",
     image: "https://cdn.shopify.com/s/files/1/0005/3713/3114/files/DinkumMermaidDress-upSet.jpg?v=1789453092",
     imageAlt: "Dinkum Dolls mermaid dress-up set",
-    url: "https://uk.dinkumdolls.com/products/dinkum-mermaid-dress-up-set"
+    url: "https://uk.dinkumdolls.com/products/dinkum-mermaid-dress-up-set",
+    affiliateUrl: ""
   },
   {
     id: "manduka-go-play-mat-carrier",
@@ -173,7 +188,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A lightweight mat sling with a zippered pocket and quick-release buckles, as described by Manduka. Check the official page for fit and current price.",
     image: "https://cdn.shopify.com/s/files/1/0132/3529/0170/products/2132md_Go-Play-3.0_322012013_Mat-Sling_Black_01_1.jpg?v=1606287446",
     imageAlt: "Manduka Go Play yoga mat carrier",
-    url: "https://www.manduka.com/products/go-play-5-0-mat-carrier"
+    url: "https://www.manduka.com/products/go-play-5-0-mat-carrier",
+    affiliateUrl: ""
   },
   {
     id: "manduka-vahni-tank",
@@ -184,7 +200,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A supportive practice top with adjustable straps, as described by Manduka. Check the official shop for available colors and sizes.",
     image: "https://cdn.shopify.com/s/files/1/0132/3529/0170/files/7556504_WVahni_Tank_Mahogany_02.jpg?v=1787778292",
     imageAlt: "Manduka Vahni Tank in mahogany",
-    url: "https://www.manduka.com/products/vahni-tank"
+    url: "https://www.manduka.com/products/vahni-tank",
+    affiliateUrl: ""
   },
   {
     id: "manduka-vahni-legging",
@@ -195,7 +212,8 @@ window.COMMONPLACE_PRODUCTS = [
     description: "Practice leggings listed by Manduka. Check the official shop for current sizes, fit information, and availability.",
     image: "https://cdn.shopify.com/s/files/1/0132/3529/0170/files/7556517_WVahni_Legging_Midnight_02.jpg?v=1787768891",
     imageAlt: "Manduka Vahni Legging in midnight",
-    url: "https://www.manduka.com/products/vahni-legging"
+    url: "https://www.manduka.com/products/vahni-legging",
+    affiliateUrl: ""
   },
   {
     id: "rifle-paper-kids-pajama-set",
@@ -206,6 +224,7 @@ window.COMMONPLACE_PRODUCTS = [
     description: "A children's pajama set listed by Rifle Paper Co. Check the official shop for sizing, materials, and current availability.",
     image: "https://cdn.shopify.com/s/files/1/0630/7148/6146/files/SLY002-01_bd5e16bb-9766-40aa-853a-9a173045f55a.jpg?v=1792095618",
     imageAlt: "Holly Jolly Nutcracker kids pajama set",
-    url: "https://riflepaperco.com/products/kids-jersey-pajama-set-holly-jolly-nutcracker"
+    url: "https://riflepaperco.com/products/kids-jersey-pajama-set-holly-jolly-nutcracker",
+    affiliateUrl: ""
   }
 ];
