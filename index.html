@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f8f7f3">
-    <meta name="description" content="A more connected marketplace. Discover independent brands, shop with intention, and grow your creative community.">
+    <meta name="description" content="Discover thoughtfully chosen products from real makers and official brand shops, then shop directly with the seller.">
     <title>Commonplace — Good things grow together</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="products.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -75,11 +76,16 @@
           <a class="text-link desktop-link" href="#join">Explore the marketplace <span aria-hidden="true">↗</span></a>
         </div>
         <div class="discovery-toolbar">
-          <div class="filter-list" role="group" aria-label="Filter products by category">
+          <div class="filter-list" id="product-filters" role="group" aria-label="Filter products by category">
             <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">Everything</button>
-            <button class="filter-chip" type="button" data-filter="home" aria-pressed="false">For your space</button>
-            <button class="filter-chip" type="button" data-filter="wear" aria-pressed="false">For your wardrobe</button>
-            <button class="filter-chip" type="button" data-filter="care" aria-pressed="false">For your ritual</button>
+            <button class="filter-chip" type="button" data-filter="home" aria-pressed="false">Home</button>
+            <button class="filter-chip" type="button" data-filter="wear" aria-pressed="false">Clothing</button>
+            <button class="filter-chip" type="button" data-filter="care" aria-pressed="false">Beauty & care</button>
+            <button class="filter-chip" type="button" data-filter="food" aria-pressed="false">Food</button>
+            <button class="filter-chip" type="button" data-filter="jewelry" aria-pressed="false">Jewelry</button>
+            <button class="filter-chip" type="button" data-filter="paper" aria-pressed="false">Paper & art</button>
+            <button class="filter-chip" type="button" data-filter="kids" aria-pressed="false">Kids</button>
+            <button class="filter-chip" type="button" data-filter="wellness" aria-pressed="false">Wellness</button>
           </div>
           <label class="search-box">
             <span class="search-icon" aria-hidden="true">⌕</span>
@@ -87,49 +93,16 @@
             <input id="product-search" type="search" placeholder="Search the good stuff" autocomplete="off">
           </label>
         </div>
-        <div class="product-grid" id="product-grid">
-          <article class="product-card" data-category="home" data-search="ceramic vase home pottery goodform studio">
-            <a class="product-image product-terracotta" href="#join" aria-label="Discover the Sunday ceramic vase">
-              <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=700&h=850&q=80" alt="Handmade sculptural ceramic vase">
-              <span class="product-badge">Made by hand</span>
-            </a>
-            <button class="save-button" type="button" aria-label="Save Sunday ceramic vase" aria-pressed="false">♡</button>
-            <div class="product-info"><div><p class="product-maker">Goodform Studio</p><h3>Sunday ceramic vase</h3></div><span class="product-price">$48</span></div>
-          </article>
-          <article class="product-card" data-category="wear" data-search="linen shirt clothing kindred goods fashion">
-            <a class="product-image product-linen" href="#join" aria-label="Discover the everyday linen shirt">
-              <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=700&h=850&q=80" alt="Natural linen clothing in a warm neutral tone">
-              <span class="product-badge">Small-batch</span>
-            </a>
-            <button class="save-button" type="button" aria-label="Save everyday linen shirt" aria-pressed="false">♡</button>
-            <div class="product-info"><div><p class="product-maker">Kindred Goods</p><h3>The everyday linen</h3></div><span class="product-price">$86</span></div>
-          </article>
-          <article class="product-card" data-category="care" data-search="soap skincare body wash still sunday">
-            <a class="product-image product-blue" href="#join" aria-label="Discover the slow morning body wash">
-              <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&h=850&q=80" alt="Thoughtfully made skincare and body care">
-              <span class="product-badge">Kind to skin</span>
-            </a>
-            <button class="save-button" type="button" aria-label="Save slow morning body wash" aria-pressed="false">♡</button>
-            <div class="product-info"><div><p class="product-maker">Still Sunday</p><h3>Slow morning body wash</h3></div><span class="product-price">$32</span></div>
-          </article>
-          <article class="product-card" data-category="home" data-search="candle home fragrance candlefolk amber glow">
-            <a class="product-image product-yellow" href="#join" aria-label="Discover the golden hour candle">
-              <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=700&h=850&q=80" alt="A softly glowing hand-poured candle">
-              <span class="product-badge">A little ritual</span>
-            </a>
-            <button class="save-button" type="button" aria-label="Save golden hour candle" aria-pressed="false">♡</button>
-            <div class="product-info"><div><p class="product-maker">Candlefolk</p><h3>Golden hour candle</h3></div><span class="product-price">$38</span></div>
-          </article>
-        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
         <p class="empty-state" id="empty-state" hidden>No little lovelies found. Try a different search.</p>
-        <div class="mobile-explore"><a class="button button-outline" href="#join">Explore the marketplace <span aria-hidden="true">↗</span></a></div>
+        <p class="marketplace-disclosure">Thoughtfully curated links to official shops. Commonplace doesn’t sell these products; prices, stock, shipping, and local availability are set by each vendor.</p>
       </section>
 
       <section class="mission section-pad" id="how-it-works" aria-labelledby="mission-title">
         <div class="mission-copy">
           <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> More than a marketplace</p>
           <h2 id="mission-title">A better way to<br><span>find your people.</span></h2>
-          <p>When makers, tastemakers, and thoughtful shoppers meet in one place, everyone gets to do their best work. That’s the whole idea.</p>
+          <p>When makers, thoughtful shops, and curious shoppers meet in one place, good finds travel further. Browse the collection and shop directly with each seller.</p>
           <a class="button button-light" href="#join">Come on in <span aria-hidden="true">↗</span></a>
         </div>
         <div class="mission-visual">
